@@ -1,4 +1,5 @@
 import csv
+import sqlite3
 from room import StandardRoom,DeluxeRoom,SuitRoom
 class RoomService:
     def readcsv(self,filename,Error):
@@ -51,6 +52,31 @@ class RoomService:
         file.close()
         error.close()
         return roomlist
+    def export_booking(self):
+        connection=sqlite3.connect("stayeasy.db")
+        cursor=connection.cursor()
+        cursor.execute("""
+                        select b.booking_id,g.guest_name,g.mobile_number,g.email,
+                        b.room_no,b.room_type,b.checkin,b.checkout,
+                        b.guest_count,b.breakfast,b.total_amount,b.status
+                        from bookings b
+                        join guests g on b.guest_id=g.guest_id 
+                    """)
+        bookings=cursor.fetchall()
+        connection.close()
+        if not bookings:
+            print("No bookings available to export")
+            return
+        with open("bookings_export.csv","w",newline="") as file:
+            writer=csv.writer(file)
+            writer.writerow([
+                "Booking ID" , "Guest Name" ,"Mobile Number" , "Email",
+                "Room Number" , "Room type" ,"Check-in" , "check-out",
+                "Guest count" , "Breakfast" , "Total Amount" , "Status"
+                
+            ])
+            writer.writerows(bookings)
+            print("All Bookingd are exported Successfully")
     
 # serices=RoomService()
 

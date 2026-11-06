@@ -77,7 +77,3 @@ class RoomService:
             ])
             writer.writerows(bookings)
             print("All Bookingd are exported Successfully")
-    
-# serices=RoomService()
-
-# serices.readcsv("rooms.csv","erros.txt")

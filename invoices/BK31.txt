@@ -1,0 +1,26 @@
+========== STAYEASY HOTEL ==========
+              INVOICE
+====================================
+
+Booking ID: 31
+Guest Name: nivi
+Mobile Number: 9150091500
+Email: sdrtyhbvf@g.in
+Room Number: 103
+Room Type: Standard
+Check-in: 06-11-2026
+Check-out: 07-11-2026
+Guest Count: 1
+
+========== NIGHT DETAILS ==========
+
+Stay Date: 06-11-2026
+Room Charge: Rs.3000.0
+Extra Guest Charge: Rs.0.0
+Breakfast Charge: Rs.350.0
+Discount: Rs.0.0
+GST: Rs.0.0
+
+========== BILL SUMMARY ==========
+Total Amount Paid: Rs.3710.0
+====================================

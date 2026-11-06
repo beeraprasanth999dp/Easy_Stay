@@ -1,0 +1,1 @@
+5:room type is not valid

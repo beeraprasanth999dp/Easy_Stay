@@ -1,0 +1,19 @@
+========== STAYEASY HOTEL ==========
+              INVOICE
+====================================
+
+Booking ID: 1
+Guest Name: Prashanth
+Mobile Number: 7993920511
+Email: prashanth@gmail.com
+Room Number: 201
+Room Type: Deluxe
+Check-in: 12-11-2026
+Check-out: 15-11-2026
+Guest Count: 3
+
+========== NIGHT DETAILS ==========
+
+========== BILL SUMMARY ==========
+Total Amount Paid: Rs.12000.0
+====================================
